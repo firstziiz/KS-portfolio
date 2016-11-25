@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hi! YWC #14 | Kanisorn Sutham</title>
+    <style>
+    @import url(https://fonts.googleapis.com/css?family=Lato);
+    html, body {
+      height: 100%;
+      font-weight: 800;
+      margin: 0;
+      padding: 0; }
+
+    body {
+      background: #ffe;
+      font-family: Arial; }
+
+    svg {
+      display: block;
+      font: 13em 'Lato';
+      width: 1280px;
+      height: 300px;
+      margin: 0 auto;
+      transition: font-size 1s; }
+
+    .text-copy {
+      fill: none;
+      stroke: white;
+      stroke-dasharray: 6% 29%;
+      stroke-width: 5px;
+      stroke-dashoffset: 0%;
+      animation: stroke-offset 5.5s infinite alternate; }
+      .text-copy:nth-child(1) {
+        stroke: #5D9CEC;
+        animation-delay: -1s; }
+      .text-copy:nth-child(2) {
+        stroke: #4FC1E9;
+        animation-delay: -2s; }
+      .text-copy:nth-child(3) {
+        stroke: #48CFAD;
+        animation-delay: -3s; }
+      .text-copy:nth-child(4) {
+        stroke: #FFCE54;
+        animation-delay: -4s; }
+      .text-copy:nth-child(5) {
+        stroke: #FC6E51;
+        animation-delay: -5s; }
+      .text-copy:nth-child(6) {
+        stroke: #EC87C0;
+        animation-delay: -6s; }
+
+    @keyframes stroke-offset {
+      100% {
+        stroke-dashoffset: -35%; } }
+
+    #particles-js {
+      height: 100%; }
+
+    .wrapper {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+      transition: all 1s linear; }
+
+    .focus {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      filter: blur(2px);
+      transform: translate(-50%, -50%); }
+
+    .mask {
+      position: absolute;
+      top: 44.5%;
+      left: 49.5%;
+      transform: translate(-50%, -50%); }
+
+    #input {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      width: 8em;
+      min-width: 30%;
+      background: none;
+      border: none;
+      outline: none;
+      border-bottom: 2px solid #ccc;
+      color: #ccc;
+      font-size: 2em;
+      text-align: center;
+      z-index: 999;
+      opacity: .8;
+      transform: translateX(-50%);
+      transition: opacity .3s; }
+      #input:hover, #input:focus {
+        opacity: 1; }
+
+    .fade-out {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1.5); }
+
+    /*==========  Non-Mobile First Method  ==========*/
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width: 1200px) {
+      svg {
+        font: 13em 'Lato'; } }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width: 992px) {
+      svg {
+        font: 10em 'Lato'; } }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width: 768px) {
+      svg {
+        font: 8em 'Lato'; } }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width: 480px) {
+      svg {
+        font: 5em 'Lato'; }
+      .wrapper {
+        top: 42%; } }
+
+    /* Custom, iPhone Retina */
+    @media only screen and (max-width: 320px) {
+      svg {
+        font: 4em 'Lato'; } }
+
+</style>
+  </head>
+    <body>
+      <div class="wrapper">
+        <div class="focus">
+          <svg viewbox="0 0 1280 200">
+          	<symbol id="s-text">
+          		<text text-anchor="middle" x="50%" y="80%">YWC #14</text>
+          	</symbol>
+
+          	<g class = "g-ants">
+          		<use xlink:href="#s-text" class="text-copy"></use>
+          		<use xlink:href="#s-text" class="text-copy"></use>
+          		<use xlink:href="#s-text" class="text-copy"></use>
+          		<use xlink:href="#s-text" class="text-copy"></use>
+          		<use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+          	</g>
+          </svg>
+        </div>
+        <div class="mask">
+            <svg class="text" viewbox="0 0 1280 200">
+            	<symbol id="s-text1">
+            		<text text-anchor="middle" x="50%" y="80%">YWC #14</text>
+            	</symbol>
+
+            	<g class = "g-ants">
+            		<use xlink:href="#s-text1" class="text-copy"></use>
+            		<use xlink:href="#s-text1" class="text-copy"></use>
+            		<use xlink:href="#s-text1" class="text-copy"></use>
+            		<use xlink:href="#s-text1" class="text-copy"></use>
+            		<use xlink:href="#s-text1" class="text-copy"></use>
+                <use xlink:href="#s-text1" class="text-copy"></use>
+            	</g>
+            </svg>
+        </div>
+      </div>
+
+      <input type="text" id="input" placeholder="type whatever" title="type and press enter"  maxlength="7" />
+
+      <script
+  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+  crossorigin="anonymous"></script>
+      <script>
+      'use strict';
+
+      document.getElementById('input').addEventListener('keypress', function (_ref) {
+          var keyCode = _ref.keyCode,
+              target = _ref.target;
+
+          if (keyCode === 13) {
+              (function () {
+                  var value = target.value.trim();
+                  target.value = '';
+
+                  $('.wrapper').addClass('fade-out');
+
+                  setTimeout(function () {
+                      $('#s-text text').html(value);
+                      $('#s-text1 text').html(value);
+                      $('.wrapper').removeClass('fade-out');
+                  }, 1000);
+              })();
+          }
+      });
+      </script>
+    </body>
+</html>
