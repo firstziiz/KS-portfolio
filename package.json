@@ -1,12 +1,26 @@
 {
+  "name": "firstziiz.github.io",
+  "version": "1.0.0",
+  "description": "Firstziiz Portfolio Website by NextJS",
+  "main": "server.js",
+  "repository": "git@github.com:reactbkk/2.0.0.git",
+  "author": "Thai Pangsakulyanont <dtinth@spacet.me>",
+  "license": "MIT",
   "dependencies": {
+    "compression": "^1.7.1",
+    "express": "^4.16.2",
     "next": "^4.2.1",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "styled-components": "^2.4.0",
+    "sw-precache": "^5.2.0"
   },
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "dev": "env NEXT_DEV=1 next",
+    "build": "next build && next export",
+    "postbuild": "cp -Rv public/* public/.nojekyll out && sw-precache --config=sw-precache-config.js --root=out/",
+    "deploy": "gh-pages --src '{.nojekyll,**/*}' -d out -m \"Deploy $(git rev-parse HEAD) to GitHub pages [ci skip]\"",
+    "lint": "eslint *.js components pages static public",
+    "serve-static": "node server.js"
   }
 }
