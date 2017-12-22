@@ -45,7 +45,7 @@ const Tag = styled.div`
     color: #434a54;
     background-color: rgba(101,109,130,.15);
   `}
-` 
+`
 
 const Tags = ({ title, tags }) => (
   <TagsWrapper className="pt-2 pb-2">

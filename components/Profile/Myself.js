@@ -42,7 +42,7 @@ const Myself = () => (
   <MyselfWrapper>
     <h1>
       KANISORN SUTHAM
-      <small class="text-muted">Student / full-stack Developer</small>
+      <small className="text-muted">Student / full-stack Developer</small>
     </h1>
     <Metas>
       <div className="meta location">

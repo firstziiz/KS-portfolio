@@ -22,7 +22,7 @@ const Profile = () => (
     <Myself />
     {
       content.skills.map((skill, index) => (
-        <Tags key={index} title={skill.title} tags={skill.tags}/>
+        <Tags key={index} title={skill.title} tags={skill.tags} />
       ))
     }
   </Container>

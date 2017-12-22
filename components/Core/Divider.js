@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 
 const Divider = styled.div`
@@ -14,7 +13,7 @@ const Divider = styled.div`
     position: relative;
     top: -.5em;
     font-style: italic;
-    font-size: 1.2em;
+    font-size: 1.2em;<P></P>
     letter-spacing: 1.4em;
   }
 `
