@@ -1,0 +1,48 @@
+{
+  "avatar": "/static/images/profile.jpg",
+  "skills": [
+    {
+      "title": "I am good at",
+      "tags": [
+        { "track": "frontend", "title": "React" },
+        { "track": "backend", "title": "NodeJS (ExpressJS)" },
+        { "track": "frontend", "title": "Bootstrap" },
+        { "track": "frontend", "title": "Semantic UI" },
+        { "track": "frontend", "title": "Styled Components" },
+        { "track": "frontend", "title": "GraphQL (Apollo)" },
+        { "track": "backend", "title": "PHP (Laravel)" },
+        { "track": "utility", "title": "GitHub" },
+        { "track": "frontend", "title": "JQuery" },
+        { "track": "backend", "title": "MySQL" },
+        { "track": "utility", "title": "CircleCI" },
+        { "track": "backend", "title": "MongoDB" }
+      ]
+    },
+    {
+      "title": "I can use & develop in",
+      "tags": [
+        { "track": "backend", "title": "SocketIO" },
+        { "track": "other", "title": "Linux (CentOS)" },
+        { "track": "other", "title": "Nginx" },
+        { "track": "utility", "title": "Sentry" },
+        { "track": "utility", "title": "Jenkins" },
+        { "track": "backend", "title": "Docker" },
+        { "track": "backend", "title": "JavaEE" },
+        { "track": "backend", "title": "SocketIO" },
+        { "track": "frontend", "title": "Sass" },
+        { "track": "utility", "title": "Line Bot" },
+        { "track": "other", "title": "PM2 (Keymatrics)" }
+      ]
+    },
+    {
+      "title": "I am interesting in",
+      "tags": [
+        { "track": "other", "title": "Agile Methodology" },
+        { "track": "other", "title": "Software Development Process" },
+        { "track": "other", "title": "Design Pattern in Javascript" },
+        { "track": "backend", "title": "Python (Django)" },
+        { "track": "other", "title": "Clean Code" }
+      ]
+    }
+  ]
+}
