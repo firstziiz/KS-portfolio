@@ -2,6 +2,8 @@ import React from 'react'
 import { injectGlobal } from 'styled-components'
 
 import Profile from '../components/Profile'
+import Timeline from '../components/Timeline'
+
 import Divider from '../components/Core/Divider'
 
 injectGlobal`
@@ -15,7 +17,7 @@ const Index = () => (
   <div>
     <Profile />
     <Divider />
-    {/* <Profile /> */}
+    <Timeline />
   </div>
 )
 
