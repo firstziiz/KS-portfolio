@@ -1,6 +1,7 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 import Tag from '../Core/Tag'
+import content from './content.json'
 
 const TimelineContainer = styled.ul`
   list-style: none;
@@ -121,29 +122,32 @@ const TimelineTags = styled.div`
 const Timeline = () => (
   <TimelineContainer>
     {
-      [...Array(7)].map((item, index) => (
+      content.timeline.map((item, index) => (
         <TimelineItem key={index}>
           <TimelineBadge>
-            <i className="fa fa-user" />
+            <i className={`fa ${item.iconClass}`} />
           </TimelineBadge>
           <TimelinePanel className="timeline-panel" index={index}>
             <TimelineHeader>
               <p className="text-muted">
-                Education <i aria-hidden="true" className="fa fa-hand-o-right" /> May 2015 <i className="fa fa-long-arrow-right" /> Current (1 year)
+                {`${item.type} `}<i aria-hidden="true" className="fa fa-hand-o-right" />{` ${item.date.start} `}<i className="fa fa-long-arrow-right" />{` ${item.date.end} `}
               </p>
               <hr />
-              <h3>Information Technology, KMUTT</h3>
+              <h3>{ item.title }</h3>
             </TimelineHeader>
             <TimelineBody>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quidem pariatur quaerat atque mollitia veniam velit dolorem exercitationem praesentium saepe? Quod libero ducimus et vitae provident maxime in, quis nulla.
+              { item.detail }
             </TimelineBody>
             <TimelineTags>
               {
-                [...Array(8)].map(e => (
+                item.tags.map((tag, index) => (
                   <Tag
-                    backend={true}
+                    backend={tag.track === 'backend'}
+                    frontend={tag.track === 'frontend'}
+                    utility={tag.track === 'utility'}
+                    other={tag.track === 'other'}
                   >
-                    TAG BACKEND
+                    { tag.title }
                   </Tag>
                 ))
               }

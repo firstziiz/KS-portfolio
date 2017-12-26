@@ -1,0 +1,49 @@
+{
+  "timeline": [
+    {
+      "iconClass": "fa-graduation-cap",
+      "type": "Education",
+      "date": {
+        "start": "May 2015",
+        "end": "Current (1 year)"
+      },
+      "title": "Information Technology, KMUTT",
+      "detail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi quas, accusamus maxime tenetur eveniet saepe, nihil beatae iusto nobis cumque culpa iste illo dignissimos suscipit in, porro. Cumque, ex dolore.",
+      "tags": [
+        { "track": "backend", "title": "Java" },
+        { "track": "other", "title": "Agile Methodology" },
+        { "track": "other", "title": "Software Development Lifecycle" }
+      ]
+    },
+    {
+      "iconClass": "fa-graduation-cap",
+      "type": "Education",
+      "date": {
+        "start": "May 2015",
+        "end": "Current (1 year)"
+      },
+      "title": "Information Technology, KMUTT",
+      "detail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi quas, accusamus maxime tenetur eveniet saepe, nihil beatae iusto nobis cumque culpa iste illo dignissimos suscipit in, porro. Cumque, ex dolore.",
+      "tags": [
+        { "track": "backend", "title": "Java" },
+        { "track": "other", "title": "Agile Methodology" },
+        { "track": "other", "title": "Software Development Lifecycle" }
+      ]
+    },
+    {
+      "iconClass": "fa-graduation-cap",
+      "type": "Education",
+      "date": {
+        "start": "May 2015",
+        "end": "Current (1 year)"
+      },
+      "title": "Information Technology, KMUTT",
+      "detail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi quas, accusamus maxime tenetur eveniet saepe, nihil beatae iusto nobis cumque culpa iste illo dignissimos suscipit in, porro. Cumque, ex dolore.",
+      "tags": [
+        { "track": "backend", "title": "Java" },
+        { "track": "other", "title": "Agile Methodology" },
+        { "track": "other", "title": "Software Development Lifecycle" }
+      ]
+    }
+  ]
+}
