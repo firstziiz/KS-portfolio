@@ -9,7 +9,6 @@ import Divider from '../components/Core/Divider'
 injectGlobal`
   body {
     font-size: 12px;
-    letter-spacing: .015em;
   }
 `
 

@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components'
 const Tag = styled.div`
   cursor: pointer;
   padding: .4em .6em;
-  display: block;
+  display: inline-block;
   margin: .2em;
   font-size: 11px;
   text-align: center;
