@@ -7,16 +7,24 @@ jobs:
     steps:
       - checkout
       - add_ssh_keys
-      - run: |
-          yarn
-      - run: |
-          yarn run lint
-      - run: |
-          yarn run build
-      - run: |
-          if [ "${CIRCLE_BRANCH}" == "master" ]
-          then
-            git config --global user.name "CircleCI" && git config --global user.email "firstziiz.k@gmail.com" && yarn run deploy
-          else
-            echo 'Not master branch, therefore not deploying ^_^'
-          fi
+      - run:
+          name: Install Package Dependencies
+          command: |
+            yarn
+      -- run:
+          name: Static Code Analysis
+          command: |
+            yarn run lint
+      - run:
+          name: Build Source Code
+          command: |
+            yarn run build
+      - deploy:
+          name: Deploy to GitHub Page
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]
+            then
+              git config --global user.name "CircleCI" && git config --global user.email "firstziiz.k@gmail.com" && yarn run deploy
+            else
+              echo 'Not master branch, therefore not deploying ^_^'
+            fi
