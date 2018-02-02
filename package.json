@@ -7,6 +7,7 @@
   "author": "Thai Pangsakulyanont <dtinth@spacet.me>",
   "license": "MIT",
   "dependencies": {
+    "commitizen": "^2.9.6",
     "compression": "^1.7.1",
     "express": "^4.16.2",
     "next": "^4.2.1",
@@ -20,13 +21,15 @@
     "postbuild": "cp -Rv public/* public/.nojekyll out && sw-precache --config=sw-precache-config.js --root=out/",
     "deploy": "gh-pages --src '{.nojekyll,**/*}' -d out -m \"Deploy $(git rev-parse HEAD) to GitHub pages [ci skip]\"",
     "lint": "eslint *.js components pages static public",
-    "serve-static": "node server.js"
+    "serve-static": "node server.js",
+    "commit": "git-cz"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.3",
     "babel-plugin-styled-components": "^1.4.0",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-stage-0": "^6.24.1",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^4.13.1",
     "eslint-config-standard": "^11.0.0-beta.0",
     "eslint-config-standard-react": "^5.0.0",
@@ -39,5 +42,10 @@
     "sw-precache": "^5.2.0",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.7"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
