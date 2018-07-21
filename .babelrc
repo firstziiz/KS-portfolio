@@ -1,9 +1,4 @@
 {
-  "presets": [
-    "next/babel",
-    "stage-0"
-  ],
-  "plugins": [
-    ["styled-components", { "ssr": true, "displayName": true, "preprocess": false } ]
-  ]
+  "extends": "react-static/.babelrc",
+  "plugins": ["babel-plugin-styled-components"]
 }
