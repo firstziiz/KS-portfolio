@@ -32,7 +32,7 @@ export default {
               rel="stylesheet"
               href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
             />
-
+            <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet" />
             {renderMeta.styleTags}
           </Head>
           <Body>{children}</Body>
