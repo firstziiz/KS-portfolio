@@ -1,9 +1,30 @@
 import React from 'react'
+import styled from 'styled-components'
+
+import KS from 'static/ks-logo-transparent.png'
+
+const NavbarWrapper = styled.div`
+  justify-content: flex-start;
+  padding: 0.4rem;
+  position: absolute;
+  width: 100%;
+  font-size: 0.6rem;
+  opacity: 0.6;
+  align-items: center;
+
+  img {
+    height: 10px;
+    margin-right: 0.2rem;
+  }
+`
 
 const Navbar = () => (
-  <div>
-    <h5>Navbar</h5>
-  </div>
+  <NavbarWrapper className="d-flex">
+    <img src={KS} alt="" />
+    <div>
+      <b>KANISORN SUTHAM</b> / PERSONAL WEBSITE
+    </div>
+  </NavbarWrapper>
 )
 
 export default Navbar

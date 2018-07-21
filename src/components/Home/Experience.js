@@ -6,6 +6,7 @@ const ExperiencesList = styled.div``
 const ExperinceItem = styled.div`
   img {
     height: 70px;
+    border-radius: 0.7rem;
   }
 `
 
@@ -32,7 +33,7 @@ const Experience = () => (
                 {`Young Passionate Program`}
               </small>
             </h4>
-            <p className="m-0">
+            <p className="mb-1">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet ipsa nam unde amet
               consequuntur! Perspiciatis facilis quas voluptate? Quam eius commodi veritatis
               laboriosam necessitatibus nulla facere quaerat non, maiores ipsam?

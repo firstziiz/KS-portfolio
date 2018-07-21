@@ -19,7 +19,7 @@ const Now = () => (
           <li key={index}>Building a pattern library for an NY-based theatre company</li>
         ))}
       </ul>
-      <p className="small pl-2">Updated: Jul 2018</p>
+      <p className="small pl-3 pt-2">Updated: Jul 2018</p>
     </Current>
   </div>
 )

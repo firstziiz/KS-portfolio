@@ -30,7 +30,9 @@ injectGlobal`
   }
 
   a {
-    /* color: #fe1111; */
+    &:hover {
+      text-decoration: none !important;
+    }
   }
 `
 
