@@ -16,6 +16,14 @@ const NavbarWrapper = styled.div`
     height: 10px;
     margin-right: 0.2rem;
   }
+
+  div {
+    position: absolute;
+    transform: rotate(-90deg);
+    left: -5rem;
+    transform-origin: center;
+    top: 6.8rem;
+  }
 `
 
 const Navbar = () => (
