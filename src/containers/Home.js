@@ -7,7 +7,7 @@ import Experience from 'components/Home/Experience'
 import Project from 'components/Home/Project'
 import Blogs from 'components/Home/Blogs'
 
-import content from 'content.json'
+import content from 'content'
 
 export default () => (
   <Layout>

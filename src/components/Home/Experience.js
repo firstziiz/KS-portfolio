@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import convert from 'htmr'
 
 const Background = styled.div`
   background: white;
@@ -35,10 +36,12 @@ const Experience = ({ exps }) => (
                 {exp.title}
                 <small>
                   <i>{` at `}</i>
-                  {exp.location}
+                  <a href={exp.locationUrl} target="_blank">
+                    {exp.location}
+                  </a>
                 </small>
               </h4>
-              <p className="mb-1">{exp.description}</p>
+              <p className="mb-1">{convert(exp.description)}</p>
             </div>
           </ExperinceItem>
         ))}

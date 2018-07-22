@@ -3,6 +3,12 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faMediumM, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import KSLogo from 'static/ks-logo-transparent.svg'
+
+const Logo = styled.img`
+  height: 6rem;
+  margin-bottom: 2rem;
+`
 
 const Container = styled.div`
   padding: 10rem 0;
@@ -27,21 +33,26 @@ const SocialList = styled.div`
 
 const Welcome = () => (
   <Container className="container text-center">
-    <Header className="pb-2">Hello! 👏🏻 I'm Kanisorn Sutham</Header>
+    <Logo src={KSLogo} alt="" />
+    <Header className="pb-2">Hello! 👏🏻 I'm Kanisorn Sutham.</Header>
     <SubHeader className="text-muted">
       Software Engineer Intern at <a href="#">Pronto Tools</a>.
     </SubHeader>
     <SocialList className="d-flex justify-content-center">
-      <a href="#" target="_blank" className="no-border-bottom">
+      <a href="https://medium.com/@FirsTziiz" target="_blank" className="no-border-bottom">
         <FontAwesomeIcon icon={faMediumM} />
       </a>
-      <a href="#" target="_blank" className="no-border-bottom">
+      <a href="http://github.com/firstziiz" target="_blank" className="no-border-bottom">
         <FontAwesomeIcon icon={faGithub} />
       </a>
-      <a href="#" target="_blank" className="no-border-bottom">
+      <a
+        href="https://linkedin.com/in/kanisorn-sutham"
+        target="_blank"
+        className="no-border-bottom"
+      >
         <FontAwesomeIcon icon={faLinkedin} />
       </a>
-      <a href="#" target="_blank" className="no-border-bottom">
+      <a href="mailto:kanisorns.k@gmail.com" target="_blank" className="no-border-bottom">
         <FontAwesomeIcon icon={faEnvelope} />
       </a>
     </SocialList>

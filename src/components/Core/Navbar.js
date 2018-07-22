@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import KS from 'static/ks-logo-transparent.png'
+import KS from 'static/ks-logo-transparent.svg'
 
 const NavbarWrapper = styled.div`
   justify-content: flex-start;

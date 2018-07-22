@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import convert from 'htmr'
 
 const ProjectItem = styled.div`
   img {
@@ -39,7 +40,7 @@ const Project = ({ projects }) => (
           <div className="p-2">
             <div className="time small">
               {project.time} at{' '}
-              <a href="#">
+              <a href={project.locationUrl} target="_blank">
                 <i>{project.location}</i>
               </a>
             </div>
@@ -50,7 +51,7 @@ const Project = ({ projects }) => (
                 {project.shortDesc}
               </small>
             </h4>
-            <p className="m-0">{project.description}</p>
+            <p className="m-0">{convert(project.description)}</p>
             <div className="tags d-flex flex-wrap">
               {project.tags.map((tag, index) => (
                 <div className="tag mr-2 m-1 small" key={index}>
