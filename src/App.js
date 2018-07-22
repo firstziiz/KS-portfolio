@@ -39,9 +39,21 @@ injectGlobal`
       border-bottom: 0;
     }
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
+      color: #ff2222;
+      border-bottom: 1px dotted #ff2222;
       text-decoration: none !important;
+
+      &.no-border-bottom {
+        border-bottom: 0;
+      }
+      > h4 {
+        color: #ff2222;
+      }
     }
+
   }
 `
 

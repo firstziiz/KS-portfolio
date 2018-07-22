@@ -5,6 +5,12 @@ import { faGithub, faMediumM, faLinkedin } from '@fortawesome/free-brands-svg-ic
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import KSLogo from 'static/ks-logo-transparent.svg'
 
+const Background = styled.div`
+  background: #fafafa; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #fafafa, #cfdef3); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #fafafa, #cfdef3);
+`
+
 const Logo = styled.img`
   height: 6rem;
   margin-bottom: 2rem;
@@ -32,31 +38,33 @@ const SocialList = styled.div`
 `
 
 const Welcome = () => (
-  <Container className="container text-center">
-    <Logo src={KSLogo} alt="" />
-    <Header className="pb-2">Hello! 👏🏻 I'm Kanisorn Sutham.</Header>
-    <SubHeader className="text-muted">
-      Software Engineer Intern at <a href="#">Pronto Tools</a>.
-    </SubHeader>
-    <SocialList className="d-flex justify-content-center">
-      <a href="https://medium.com/@FirsTziiz" target="_blank" className="no-border-bottom">
-        <FontAwesomeIcon icon={faMediumM} />
-      </a>
-      <a href="http://github.com/firstziiz" target="_blank" className="no-border-bottom">
-        <FontAwesomeIcon icon={faGithub} />
-      </a>
-      <a
-        href="https://linkedin.com/in/kanisorn-sutham"
-        target="_blank"
-        className="no-border-bottom"
-      >
-        <FontAwesomeIcon icon={faLinkedin} />
-      </a>
-      <a href="mailto:kanisorns.k@gmail.com" target="_blank" className="no-border-bottom">
-        <FontAwesomeIcon icon={faEnvelope} />
-      </a>
-    </SocialList>
-  </Container>
+  <Background>
+    <Container className="container text-center">
+      <Logo src={KSLogo} alt="" />
+      <Header className="pb-2">Hello! 👏🏻 I'm Kanisorn Sutham.</Header>
+      <SubHeader className="text-muted">
+        Software Engineer Intern at <a href="#">Pronto Tools</a>.
+      </SubHeader>
+      <SocialList className="d-flex justify-content-center">
+        <a href="https://medium.com/@FirsTziiz" target="_blank" className="no-border-bottom">
+          <FontAwesomeIcon icon={faMediumM} />
+        </a>
+        <a href="http://github.com/firstziiz" target="_blank" className="no-border-bottom">
+          <FontAwesomeIcon icon={faGithub} />
+        </a>
+        <a
+          href="https://linkedin.com/in/kanisorn-sutham"
+          target="_blank"
+          className="no-border-bottom"
+        >
+          <FontAwesomeIcon icon={faLinkedin} />
+        </a>
+        <a href="mailto:kanisorns.k@gmail.com" target="_blank" className="no-border-bottom">
+          <FontAwesomeIcon icon={faEnvelope} />
+        </a>
+      </SocialList>
+    </Container>
+  </Background>
 )
 
 export default Welcome
