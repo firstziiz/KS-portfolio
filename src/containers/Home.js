@@ -7,12 +7,14 @@ import Experience from 'components/Home/Experience'
 import Project from 'components/Home/Project'
 import Blogs from 'components/Home/Blogs'
 
+import content from 'content.json'
+
 export default () => (
   <Layout>
     <Welcome />
-    <Now />
-    <Experience />
-    <Project />
+    <Now now={content.now} />
+    <Experience exps={content.experiences} />
+    <Project projects={content.projects} />
     <Blogs />
   </Layout>
 )
