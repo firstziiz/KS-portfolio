@@ -41,6 +41,16 @@ export default {
             />
             <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet" />
             {renderMeta.styleTags}
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46738763-2" />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'UA-46738763-2');`
+              }}
+            />
           </Head>
           <Body>{children}</Body>
         </Html>
