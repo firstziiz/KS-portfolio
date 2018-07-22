@@ -51,7 +51,7 @@ class Blogs extends React.Component {
                   Publish at {convertTimetoText(post.pubDate)} on Medium
                 </div>
                 <a href={post.link} target="_blank">
-                  <h4>{post.title}</h4>
+                  <h4 className="d-inline-block">{post.title}</h4>
                 </a>
               </BlogItem>
             ))}
