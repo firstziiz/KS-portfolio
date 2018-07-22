@@ -50,7 +50,7 @@ class Blogs extends React.Component {
                 <div className="time small">
                   Publish at {convertTimetoText(post.pubDate)} on Medium
                 </div>
-                <a href={post.link}>
+                <a href={post.link} target="_blank">
                   <h4>{post.title}</h4>
                 </a>
               </BlogItem>

@@ -20,7 +20,7 @@ const NavbarWrapper = styled.div`
   div {
     position: absolute;
     transform: rotate(-90deg);
-    left: -5rem;
+    left: -5.2rem;
     transform-origin: center;
     top: 6.8rem;
   }

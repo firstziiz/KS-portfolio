@@ -27,7 +27,7 @@ const ProjectItem = styled.div`
 const Project = ({ projects }) => (
   <div className="container py-4">
     <div className="pb-2">
-      <h2 className="mb-0">🚶 Projects.</h2>
+      <h2 className="mb-0">🎁 Projects.</h2>
       <span className="d-block text-muted">Everythings I do or get it done!.</span>
     </div>
     <div>

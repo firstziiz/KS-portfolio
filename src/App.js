@@ -31,6 +31,7 @@ injectGlobal`
   }
 
   a {
+    transition: all 0.4s;
     font-style: italic;
     border-bottom: 1px dotted #777;
 
