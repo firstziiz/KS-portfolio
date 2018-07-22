@@ -5,6 +5,10 @@ import { isEmpty } from 'ramda'
 
 import { convertTimetoText } from 'utils/time'
 
+const Background = styled.div`
+  background: white;
+`
+
 const BlogList = styled.div``
 
 const BlogItem = styled.div`
@@ -32,26 +36,28 @@ class Blogs extends React.Component {
 
   render() {
     return (
-      <div className="container py-4">
-        <div className="py-2">
-          <h2 className="mb-0">Blogs.</h2>
-          <span className="d-block text-muted">
-            Knowledge, skill, experiences, lifestyle, I ever had share like article.
-          </span>
+      <Background>
+        <div className="container py-4">
+          <div className="py-2">
+            <h2 className="mb-0">📖 Blogs.</h2>
+            <span className="d-block text-muted">
+              Knowledge, skill, experiences, lifestyle, I ever had share like article.
+            </span>
+          </div>
+          <BlogList>
+            {this.state.posts.map((post, index) => (
+              <BlogItem key={index} className="blog pb-2">
+                <div className="time small">
+                  Publish at {convertTimetoText(post.pubDate)} on Medium
+                </div>
+                <a href={post.link}>
+                  <h4>{post.title}</h4>
+                </a>
+              </BlogItem>
+            ))}
+          </BlogList>
         </div>
-        <BlogList>
-          {this.state.posts.map((post, index) => (
-            <BlogItem key={index} className="blog pb-2">
-              <div className="time small">
-                Publish at {convertTimetoText(post.pubDate)} on Medium
-              </div>
-              <a href={post.link}>
-                <h4>{post.title}</h4>
-              </a>
-            </BlogItem>
-          ))}
-        </BlogList>
-      </div>
+      </Background>
     )
   }
 }
