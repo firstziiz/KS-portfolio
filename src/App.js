@@ -14,6 +14,7 @@ injectGlobal`
     padding: 0;
     color: #6c757d;
     background-color: #f8f9fa;
+    letter-spacing: 0.012em;
   }
 
   h1,
@@ -30,6 +31,13 @@ injectGlobal`
   }
 
   a {
+    font-style: italic;
+    border-bottom: 1px dotted #777;
+
+    &.no-border-bottom {
+      border-bottom: 0;
+    }
+
     &:hover {
       text-decoration: none !important;
     }
