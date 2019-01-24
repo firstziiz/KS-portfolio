@@ -59,13 +59,13 @@ const Project = ({ projects }) => (
                 </div>
               ))}
               {project.githubUrl !== '' && (
-                <a href="#" className="no-border-bottom tag mr-2 m-1 small github">
+                <a href="#" className="no-border-bottom tag mr-2 m-1 small github" target="_blank">
                   {`GitHub `}
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               )}
               {project.projectUrl !== '' && (
-                <a href="#" className="no-border-bottom tag mr-2 m-1 small link">
+                <a href="#" className="no-border-bottom tag mr-2 m-1 small link" target="_blank">
                   {`Go to Project `}
                   <FontAwesomeIcon icon={faLink} />
                 </a>
