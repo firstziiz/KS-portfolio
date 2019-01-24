@@ -11,7 +11,7 @@ import content from 'content'
 
 export default () => (
   <Layout>
-    <Welcome />
+    <Welcome profile={content.profile} />
     <Now now={content.now} />
     <Experience exps={content.experiences} />
     <Project projects={content.projects} />

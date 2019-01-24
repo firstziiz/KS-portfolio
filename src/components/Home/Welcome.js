@@ -37,13 +37,16 @@ const SocialList = styled.div`
   }
 `
 
-const Welcome = () => (
+const Welcome = ({ profile }) => (
   <Background>
     <Container className="container text-center">
       <Logo src={KSLogo} alt="" />
       <Header className="pb-2">Hello! 👏🏻 I'm Kanisorn Sutham.</Header>
       <SubHeader className="text-muted">
-        Software Engineer Intern at <a href="#">Pronto Tools</a>.
+        {profile.position} at{' '}
+        <a href={profile.company_link} target="_blank">
+          {profile.company_name}
+        </a>.
       </SubHeader>
       <SocialList className="d-flex justify-content-center">
         <a href="https://medium.com/@FirsTziiz" target="_blank" className="no-border-bottom">
