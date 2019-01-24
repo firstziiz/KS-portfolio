@@ -12,6 +12,7 @@ const ExperinceItem = styled.div`
   img {
     height: 70px;
     border-radius: 0.7rem;
+    border: 1px dotted #ccc;
   }
 `
 
@@ -41,7 +42,7 @@ const Experience = ({ exps }) => (
                   </a>
                 </small>
               </h4>
-              <p className="mb-1">{convert(exp.description)}</p>
+              <p className="mb-1 white-space-pre-line">{convert(exp.description)}</p>
             </div>
           </ExperinceItem>
         ))}

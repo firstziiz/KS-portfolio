@@ -55,6 +55,11 @@ injectGlobal`
     }
 
   }
+
+
+  .white-space-pre-line {
+    white-space: pre-line;
+  }
 `
 
 const App = () => (

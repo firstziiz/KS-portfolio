@@ -51,7 +51,7 @@ const Project = ({ projects }) => (
                 {project.shortDesc}
               </small>
             </h4>
-            <p className="m-0">{convert(project.description)}</p>
+            <p className="m-0 white-space-pre-line">{convert(project.description)}</p>
             <div className="tags d-flex flex-wrap">
               {project.tags.map((tag, index) => (
                 <div className="tag mr-2 m-1 small" key={index}>
