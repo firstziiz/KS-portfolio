@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faMediumM, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons'
 import KSLogo from 'static/ks-logo-transparent.svg'
 
 const Background = styled.div`
@@ -55,15 +55,11 @@ const Welcome = ({ profile }) => (
         <a href="http://github.com/firstziiz" target="_blank" className="no-border-bottom">
           <FontAwesomeIcon icon={faGithub} />
         </a>
-        <a
-          href="https://linkedin.com/in/kanisorn-sutham"
-          target="_blank"
-          className="no-border-bottom"
-        >
-          <FontAwesomeIcon icon={faLinkedin} />
-        </a>
         <a href="mailto:kanisorns.k@gmail.com" target="_blank" className="no-border-bottom">
           <FontAwesomeIcon icon={faEnvelope} />
+        </a>
+        <a href="/KANISORN_SUTHAM_CV.pdf" target="_blank" className="no-border-bottom">
+          <FontAwesomeIcon icon={faFile} />
         </a>
       </SocialList>
     </Container>
