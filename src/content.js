@@ -16,8 +16,13 @@ const data = {
     company_name: 'Pronto Tools'
   },
   now: {
-    list: ['13231', 'a', 'a', 'a', 'a', 'a'],
-    updated: 'Jul 2018'
+    list: [
+      `👨🏻‍💻 I'm study at a last semester of 4 year in university. I'm looking for a job.`,
+      `✍🏻 I’m trying to publish more on this blog. About my experiences in last year. It've a lot of good and bad moment but all them are great experiences.`,
+      '🏃🏻‍ I’m moving to a 16/8 intermittent fasting.',
+      '📖 I’m trying to read for at least 30 minutes per day.'
+    ],
+    updated: 'Jan 2019'
   },
   experiences: [
     {
